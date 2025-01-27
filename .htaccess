@@ -1,4 +1,6 @@
-AuthName "Restricted Content"
-AuthUserFile F:\Study\Done\Open Polytechnic\BIT 607\Assessment 2\.htpasswd
-AuthType Basic
-Require valid-user
+<Files "staff-roster.html">
+  AuthType Basic
+  AuthName "Restricted Access"
+  AuthUserFile /Study/Done/.htpasswd
+  Require valid-user
+</Files>

@@ -1,3 +1,6 @@
+/* 
+  Base styling for the entire site, including fonts and colors.
+*/
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -6,6 +9,9 @@ body {
     background-color: var(--background-color);
   }
   
+  /* 
+    CSS variables for consistent theming throughout the site.
+  */
   :root {
     --primary-color: #f8c471;
     --secondary-color: #1a6daa;
@@ -13,6 +19,9 @@ body {
     --background-color: #ecf0f1;
   }
   
+  /* 
+    Header styling:
+  */
   header {
     background-color: var(--primary-color);
     padding: 10px 20px;
@@ -22,6 +31,9 @@ body {
     position: relative;
   }
   
+  /* 
+    Main heading inside the header
+  */
   header h1 {
     margin: 0;
     font-size: 2em;
@@ -29,10 +41,16 @@ body {
     margin-left: 15px;
   }
   
+  /* 
+    Logo container positioning
+  */
   .logo-container {
     position: relative;
   }
   
+  /* 
+    Logo image styles
+  */
   .logo {
     width: 50px;
     height: 50px;
@@ -40,6 +58,9 @@ body {
     border-radius: 50%;
   }
   
+  /* 
+    Navigation bar
+  */
   nav ul {
     list-style: none;
     margin: 0;
@@ -63,13 +84,19 @@ body {
     display: inline-block;
   }
   
+  /* 
+    Hover and focus states for nav links
+  */
   nav ul li a:hover,
   nav ul li a:focus {
     color: #e74c3c;
     background-color: #dff9fb;
-    border-bottom: none;
+    border-bottom: none; 
   }
   
+  /* 
+    Section heading area
+  */
   .heading {
     background-color: #dff9fb;
     padding: 20px;
@@ -80,6 +107,9 @@ body {
     color: var(--secondary-color);
   }
   
+  /* 
+    Reusable grid layout
+  */
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -87,6 +117,9 @@ body {
     padding: 20px;
   }
   
+  /* 
+    Grid items
+  */
   .grid div {
     overflow: hidden;
     display: flex;
@@ -98,6 +131,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+
   .grid img {
     max-width: 100%;
     max-height: 100%;
@@ -105,6 +139,9 @@ body {
     border-radius: 10px;
   }
   
+  /* 
+    Footer styling
+  */
   footer {
     background-color: #34495e;
     color: #ecf0f1;
@@ -117,6 +154,9 @@ body {
     margin: 5px 0;
   }
   
+  /*
+    Social icons container
+  */
   .social-icons {
     display: flex;
     justify-content: center;
@@ -129,6 +169,9 @@ body {
     height: 30px;
   }
   
+  /* 
+    Generic button styling
+  */
   button {
     background-color: var(--secondary-color);
     color: #fff;
@@ -143,16 +186,25 @@ body {
     background-color: #3498db;
   }
   
+  /* 
+    Accessibility focus outline for links and buttons
+  */
   a:focus,
   button:focus {
     outline: 2px dashed #e74c3c;
   }
   
+  /* 
+    Error text styling
+  */
   .error {
     color: #e74c3c;
     font-size: 0.85em;
   }
   
+  /* 
+    Responsiveness
+  */
   @media (max-width: 768px) {
     nav ul {
       flex-direction: column;
@@ -172,6 +224,9 @@ body {
     }
   }
   
+  /* 
+    Services list
+  */
   .services-list {
     display: flex;
     flex-direction: column;
@@ -187,11 +242,11 @@ body {
     padding: 10px;
     border-radius: 5px;
   }
-  
+
   .service-info {
     flex: 1;
   }
-  
+
   .service-image {
     width: 150px;
     height: 100px;
@@ -210,6 +265,9 @@ body {
     border-radius: 10px;
   }
   
+  /* 
+    Gallery
+  */
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -250,13 +308,16 @@ body {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+
   @media (max-width: 480px) {
     .gallery-grid {
       grid-template-columns: 1fr;
     }
   }
   
+  /* 
+    Booking calendar
+  */
   .booking-calendar {
     display: flex;
     justify-content: space-between;
@@ -276,7 +337,7 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .calendar h3 {
     text-align: center;
   }
@@ -318,6 +379,9 @@ body {
     border-color: #74b9ff;
   }
   
+  /* 
+    Map container for contact page
+  */
   .contact-map {
     text-align: center;
   }
@@ -328,6 +392,9 @@ body {
     color: var(--secondary-color);
   }
   
+  /* 
+    Embedded Google Map (iframe):
+  */
   .contact-map iframe {
     width: 600px;
     height: 450px;
@@ -345,6 +412,9 @@ body {
     }
   }
   
+  /* 
+    General form container for user details, contact forms, etc.
+  */
   .form-details {
     max-width: 600px;
     margin: 0 auto;
@@ -353,7 +423,7 @@ body {
     border: 1px solid #dcdcdc;
     border-radius: 5px;
   }
-  
+ 
   .form-details h3 {
     margin-bottom: 10px;
   }
@@ -362,7 +432,7 @@ body {
     display: block;
     margin-bottom: 5px;
   }
-  
+
   .form-details input {
     width: 100%;
     padding: 10px;
@@ -370,7 +440,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+
   .form-details button {
     width: 100%;
     background-color: #2980b9;
@@ -381,7 +451,7 @@ body {
     cursor: pointer;
     font-size: 1em;
   }
-  
+
   .form-details button:hover {
     background-color: #3498db;
   }
