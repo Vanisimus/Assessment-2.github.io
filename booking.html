@@ -1,114 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Snazzy Paws Grooming Booking page. Where you can book you pet in for the service you desire!">
-    <title>Booking - Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/styles.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description"
+        content="Snazzy Paws Grooming Booking page. Where you can book your pet in for the service you desire!"/>
+  <title>Booking - Snazzy Paws Grooming</title>
+
+  <!-- W3.CSS for layout & responsiveness -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/snazzy_paws_grooming_logo.webp" alt="Snazzy Paws Grooming Logo" class="logo">
-        </div>
-        <h1>Snazzy Paws Grooming</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="heading">
-            <h2>Booking</h2>
-        </div>
-        <div class="booking-calendar">
-            <div class="calendar">
-                <h3>January 2025</h3>
-                <div class="calendar-grid">
-                    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
-                    <div></div><div></div><div>1</div><button>2</button><button>3</button><button>4</button><button>5</button>
-                    <button>6</button><button>7</button><button>8</button><button>9</button><button>10</button><button>11</button><button>12</button>
-                    <button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button>
-                    <button>20</button><button>21</button><button>22</button><button>23</button><button>24</button><button>25</button><button>26</button>
-                    <button>27</button><button>28</button><button>29</button><button>30</button><button>31</button>
-                </div>
-            </div>
-            <div class="calendar">
-                <h3>February 2025</h3>
-                <div class="calendar-grid">
-                    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
-                    <div></div><button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button>
-                    <button>7</button><button>8</button><button>9</button><button>10</button><button>11</button><button>12</button>
-                    <button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button>
-                    <button>20</button><button>21</button><button>22</button><button>23</button><button>24</button><button>25</button><button>26</button>
-                    <button>27</button><button>28</button>
-                </div>
-            </div>
-        </div>
 
-        <div class="services-list">
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$50</div>
-                </div>
-                <div class="service-image"><img src="images/Service-1.webp" alt="Service 1"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$70</div>
-                </div>
-                <div class="service-image"><img src="images/Service-4.webp" alt="Service 4"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$90</div>
-                </div>
-                <div class="service-image"><img src="images/Service-5.webp" alt="Service 5"></div>
-            </div>
+  <!-- HEADER -->
+  <header class="w3-container w3-center w3-padding-16"
+          style="background-color: var(--primary-color);">
+    <div class="logo-container w3-center">
+      <img src="images/snazzy_paws_grooming_logo.webp"
+           alt="Snazzy Paws Grooming Logo"
+           class="logo w3-circle" />
+    </div>
+    <h1 class="w3-xxlarge" style="color:#2c3e50; margin-left:15px;">
+      Snazzy Paws Grooming
+    </h1>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul class="w3-bar w3-center w3-light-grey w3-border-bottom" style="list-style: none; margin: 0; padding: 0;">
+      <li class="w3-bar-item"><a href="index.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Home</a></li>
+      <li class="w3-bar-item"><a href="services.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Services</a></li>
+      <li class="w3-bar-item"><a href="gallery.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Gallery</a></li>
+      <li class="w3-bar-item"><a href="booking.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Booking</a></li>
+      <li class="w3-bar-item"><a href="contact.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Contact</a></li>
+      <li class="w3-bar-item"><a href="privacy-policy.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Privacy Policy</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="w3-container w3-padding-32">
+
+    <!-- Page Heading -->
+    <div class="heading w3-center" style="background-color:#dff9fb; padding:20px;">
+      <h2 style="color: var(--secondary-color);">Booking</h2>
+    </div>
+
+    <!-- Booking Calendar Section -->
+    <div class="booking-calendar w3-row-padding" style="padding:20px;">
+      <!-- First Calendar -->
+      <div class="calendar w3-col l6 m12 w3-margin-bottom w3-card w3-padding"
+           style="background-color:#f7f9fa;">
+        <h3 class="w3-center">January 2025</h3>
+        <div class="calendar-grid">
+          <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+          <div></div><div></div><div>1</div><button>2</button><button>3</button><button>4</button><button>5</button>
+          <button>6</button><button>7</button><button>8</button><button>9</button><button>10</button><button>11</button><button>12</button>
+          <button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button>
+          <button>20</button><button>21</button><button>22</button><button>23</button><button>24</button><button>25</button><button>26</button>
+          <button>27</button><button>28</button><button>29</button><button>30</button><button>31</button>
         </div>
+      </div>
 
-        <form class="form-details">
-            <h3>Customer Details</h3>
-            <label for="owner-name">Owner's Name:</label>
-            <input type="text" id="owner-name" name="owner-name" placeholder="Enter your name" required>
-            
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            
-            <label for="dog-name">Dog's Name:</label>
-            <input type="text" id="dog-name" name="dog-name" placeholder="Enter your dog's name" required>
-
-            <label for="dog-breed">Dog's Breed:</label>
-            <input type="text" id="dog-breed" name="dog-breed" placeholder="Enter your dog's breed" required>
-
-            <label for="dog-age">Dog's Age:</label>
-            <input type="text" id="dog-age" name="dog-age" placeholder="Enter your dog's age" required>
-            
-            <button type="submit">Book Now!</button>
-        </form>
-    </main>
-    <footer>
-        <div class="social-icons">
-            <img src="images/facebook-icon.webp" alt="Facebook">
-            <img src="images/twitter-icon.webp" alt="Twitter">
-            <img src="images/instagram-icon.webp" alt="Instagram">
-            <img src="images/whatsapp-icon.webp" alt="WhatsApp">
-            <img src="images/youtube-icon.webp" alt="YouTube">
+      <!-- Second Calendar -->
+      <div class="calendar w3-col l6 m12 w3-margin-bottom w3-card w3-padding"
+           style="background-color:#f7f9fa;">
+        <h3 class="w3-center">February 2025</h3>
+        <div class="calendar-grid">
+          <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+          <div></div><button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button>
+          <button>7</button><button>8</button><button>9</button><button>10</button><button>11</button><button>12</button>
+          <button>13</button><button>14</button><button>15</button><button>16</button><button>17</button><button>18</button><button>19</button>
+          <button>20</button><button>21</button><button>22</button><button>23</button><button>24</button><button>25</button><button>26</button>
+          <button>27</button><button>28</button>
         </div>
-        <p>Opening Hours: Mon-Sat 9:00 AM - 5:00 PM</p>
-    </footer>
+      </div>
+    </div>
+
+    <!-- Services List -->
+    <div class="services-list w3-container w3-margin-bottom">
+      <!-- Service Item 1 -->
+      <div class="service-item w3-card w3-padding w3-margin-bottom">
+        <div class="service-info">
+          <h3 class="service-title">Service 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+          <div class="service-price">$50</div>
+        </div>
+        <div class="service-image">
+          <img src="images/Service-1.webp" alt="Service 1" class="w3-image"/>
+        </div>
+      </div>
+
+      <!-- Service Item 2 -->
+      <div class="service-item w3-card w3-padding w3-margin-bottom">
+        <div class="service-info">
+          <h3 class="service-title">Service 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+          <div class="service-price">$70</div>
+        </div>
+        <div class="service-image">
+          <img src="images/Service-4.webp" alt="Service 4" class="w3-image"/>
+        </div>
+      </div>
+
+      <!-- Service Item 3 -->
+      <div class="service-item w3-card w3-padding">
+        <div class="service-info">
+          <h3 class="service-title">Service 5</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+          <div class="service-price">$90</div>
+        </div>
+        <div class="service-image">
+          <img src="images/Service-5.webp" alt="Service 5" class="w3-image"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <form class="form-details w3-margin-bottom">
+      <h3>Customer Details</h3>
+      <label for="owner-name">Owner's Name:</label>
+      <input
+        type="text"
+        id="owner-name"
+        name="owner-name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="dog-name">Dog's Name:</label>
+      <input
+        type="text"
+        id="dog-name"
+        name="dog-name"
+        placeholder="Enter your dog's name"
+        required
+      />
+
+      <label for="dog-breed">Dog's Breed:</label>
+      <input
+        type="text"
+        id="dog-breed"
+        name="dog-breed"
+        placeholder="Enter your dog's breed"
+        required
+      />
+
+      <label for="dog-age">Dog's Age:</label>
+      <input
+        type="text"
+        id="dog-age"
+        name="dog-age"
+        placeholder="Enter your dog's age"
+        required
+      />
+
+      <button type="submit">Book Now!</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w3-container w3-center"
+          style="background-color:#34495e; color:#ecf0f1; padding:20px;">
+    <div class="social-icons w3-xlarge w3-section">
+      <img src="images/facebook-icon.webp" alt="Facebook"
+           style="width:30px; height:30px; margin:10px;"/>
+      <img src="images/twitter-icon.webp" alt="Twitter"
+           style="width:30px; height:30px; margin:10px;"/>
+      <img src="images/instagram-icon.webp" alt="Instagram"
+           style="width:30px; height:30px; margin:10px;"/>
+      <img src="images/whatsapp-icon.webp" alt="WhatsApp"
+           style="width:30px; height:30px; margin:10px;"/>
+      <img src="images/youtube-icon.webp" alt="YouTube"
+           style="width:30px; height:30px; margin:10px;"/>
+    </div>
+    <p>Opening Hours: Mon-Sat 9:00 AM - 5:00 PM</p>
+  </footer>
+
 </body>
 </html>

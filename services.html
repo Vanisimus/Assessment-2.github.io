@@ -1,84 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Snazzy Paws Grooming Services page. Find out what services we provide to find the one you want!">
-        <title>Snazzy Paws Grooming</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Snazzy Paws Grooming Services page. Find out what services we provide to find the one you want!">
+  <title>Snazzy Paws Grooming</title>
+  <!-- Link to W3.CSS for layout and responsiveness -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/snazzy_paws_grooming_logo.webp" alt="Snazzy Paws Grooming Logo" class="logo">
+
+  <!-- HEADER -->
+  <header class="w3-container w3-center w3-padding-16" style="background-color: var(--primary-color);">
+    <div class="logo-container w3-center">
+      <img src="images/snazzy_paws_grooming_logo.webp" alt="Snazzy Paws Grooming Logo" class="logo w3-circle">
+    </div>
+    <h1 class="w3-xxlarge" style="color: #2c3e50;">Snazzy Paws Grooming</h1>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul class="w3-bar w3-center w3-light-grey w3-border-bottom" style="list-style: none; margin: 0; padding: 0;">
+      <li class="w3-bar-item"><a href="index.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Home</a></li>
+      <li class="w3-bar-item"><a href="services.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Services</a></li>
+      <li class="w3-bar-item"><a href="gallery.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Gallery</a></li>
+      <li class="w3-bar-item"><a href="booking.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Booking</a></li>
+      <li class="w3-bar-item"><a href="contact.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Contact</a></li>
+      <li class="w3-bar-item"><a href="privacy-policy.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Privacy Policy</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT: Services -->
+  <main class="w3-container w3-padding-32">
+    <div class="heading w3-center" style="background-color: #dff9fb;">
+      <h2 style="color: var(--secondary-color);">Services</h2>
+    </div>
+
+    <!-- Services List -->
+    <div class="services-list w3-container">
+      <div class="w3-row-padding w3-margin-bottom">
+        <div class="w3-col l6 s12">
+          <div class="service-item w3-card w3-padding">
+            <div class="service-info">
+              <h3 class="service-title">Service 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+              <div class="service-price">$50</div>
+            </div>
+            <div class="service-image">
+              <img src="images/Service-1.webp" alt="Service 1" class="w3-image w3-border-radius-large">
+            </div>
+          </div>
         </div>
-        <h1>Snazzy Paws Grooming</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="heading">
-            <h2>Services</h2>
+
+        <div class="w3-col l6 s12">
+          <div class="service-item w3-card w3-padding">
+            <div class="service-info">
+              <h3 class="service-title">Service 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+              <div class="service-price">$50</div>
+            </div>
+            <div class="service-image">
+              <img src="images/Service-2.webp" alt="Service 2" class="w3-image w3-border-radius-large">
+            </div>
+          </div>
         </div>
-        <div class="services-list">
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$50</div>
-                </div>
-                <div class="service-image"><img src="images/Service-1.webp" alt="Service 1"></div>
+      </div>
+
+      <div class="w3-row-padding w3-margin-bottom">
+        <div class="w3-col l6 s12">
+          <div class="service-item w3-card w3-padding">
+            <div class="service-info">
+              <h3 class="service-title">Service 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+              <div class="service-price">$45</div>
             </div>
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$50</div>
-                </div>
-                <div class="service-image"><img src="images/Service-2.webp" alt="Service 2"></div>
+            <div class="service-image">
+              <img src="images/Service-3.webp" alt="Service 3" class="w3-image w3-border-radius-large">
             </div>
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$45</div>
-                </div>
-                <div class="service-image"><img src="images/Service-3.webp" alt="Service 3"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$70</div>
-                </div>
-                <div class="service-image"><img src="images/Service-4.webp" alt="Service 4"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-info">
-                    <h3 class="service-title">Service 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
-                    <div class="service-price">$90</div>
-                </div>
-                <div class="service-image"><img src="images/Service-5.webp" alt="Service 5"></div>
-            </div>
+          </div>
         </div>
-    </main>
-    <footer>
-        <div class="social-icons">
-            <img src="images/facebook-icon.webp" alt="Facebook">
-            <img src="images/twitter-icon.webp" alt="Twitter">
-            <img src="images/instagram-icon.webp" alt="Instagram">
-            <img src="images/whatsapp-icon.webp" alt="WhatsApp">
-            <img src="images/youtube-icon.webp" alt="YouTube">
+
+        <div class="w3-col l6 s12">
+          <div class="service-item w3-card w3-padding">
+            <div class="service-info">
+              <h3 class="service-title">Service 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+              <div class="service-price">$70</div>
+            </div>
+            <div class="service-image">
+              <img src="images/Service-4.webp" alt="Service 4" class="w3-image w3-border-radius-large">
+            </div>
+          </div>
         </div>
-        <p>Opening Hours: Mon-Sat 9:00 AM - 5:00 PM</p>
-    </footer>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col l6 s12">
+          <div class="service-item w3-card w3-padding">
+            <div class="service-info">
+              <h3 class="service-title">Service 5</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac velit auctor, fermentum felis a, tristique purus.</p>
+              <div class="service-price">$90</div>
+            </div>
+            <div class="service-image">
+              <img src="images/Service-5.webp" alt="Service 5" class="w3-image w3-border-radius-large">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w3-container w3-center" style="background-color: #34495e; color: #ecf0f1; padding: 20px;">
+    <div class="social-icons w3-xlarge w3-section">
+      <img src="images/facebook-icon.webp" alt="Facebook" style="width: 30px; height: 30px; margin: 10px;">
+      <img src="images/twitter-icon.webp" alt="Twitter" style="width: 30px; height: 30px; margin: 10px;">
+      <img src="images/instagram-icon.webp" alt="Instagram" style="width: 30px; height: 30px; margin: 10px;">
+      <img src="images/whatsapp-icon.webp" alt="WhatsApp" style="width: 30px; height: 30px; margin: 10px;">
+      <img src="images/youtube-icon.webp" alt="YouTube" style="width: 30px; height: 30px; margin: 10px;">
+    </div>
+    <p>Opening Hours: Mon-Sat 9:00 AM - 5:00 PM</p>
+  </footer>
+
 </body>
 </html>

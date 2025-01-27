@@ -1,74 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Snazzy Paws Grooming Gallery. Where you can come to see what we do and look at lots of cute animals!">
-    <title>Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/styles.css">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description"
+        content="Snazzy Paws Grooming Gallery. Where you can come to see what we do and look at lots of cute animals!" />
+  <title>Snazzy Paws Grooming</title>
+
+  <!-- W3.CSS for layout & responsiveness -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/snazzy_paws_grooming_logo.webp" alt="Snazzy Paws Grooming Logo" class="logo">
-        </div>
-        <h1>Snazzy Paws Grooming</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="heading">
-            <h2>Gallery</h2>
-        </div>
-        <div class="controls">
-            <label for="filter">Filter by title:</label>
-            <input type="text" id="filter" placeholder="Type to filter...">
-            <label for="sort">Sort by:</label>
-            <select id="sort">
-                <option value="title">Title</option>
-                <option value="date">Date</option>
-            </select>
-        </div>
-    
-        <div class="gallery-grid">
-            <div class="gallery-item" data-title="Dog Bathing" data-date="2023-01-10">
-                <img src="images/dog-bathing.webp" alt="Dog Bathing">
-            </div>
-            <div class="gallery-item" data-title="Dog Grooming" data-date="2023-02-20">
-                <img src="images/Service-3.webp" alt="Dog Grooming">
-            </div>
-            <div class="gallery-item" data-title="Puppy Training" data-date="2023-03-15">
-                <img src="images/puppies.webp" alt="Puppy Training">
-            </div>
-            <div class="gallery-item" data-title="Nail Clipping" data-date="2023-04-05">
-                <img src="images/Service-4.webp" alt="Nail Clipping">
-            </div>
-            <div class="gallery-item" data-title="Hair Styling" data-date="2023-05-12">
-                <img src="images/Service-5.webp" alt="Hair Styling">
-            </div>
-            <div class="gallery-item" data-title="Teeth Cleaning" data-date="2023-06-08">
-                <img src="images/teeth-cleaning.webp" alt="Teeth Cleaning">
-            </div>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="social-icons">
-            <img src="images/facebook-icon.webp" alt="Facebook">
-            <img src="images/twitter-icon.webp" alt="Twitter">
-            <img src="images/instagram-icon.webp" alt="Instagram">
-            <img src="images/whatsapp-icon.webp" alt="WhatsApp">
-            <img src="images/youtube-icon.webp" alt="YouTube">
-        </div>
-        <p>Opening Hours: Mon-Sat 9:00 AM - 5:00 PM</p>
-    </footer>
+
+  <!-- HEADER -->
+  <header class="w3-container w3-center w3-padding-16"
+          style="background-color: var(--primary-color);">
+    <div class="logo-container w3-center">
+      <img src="images/snazzy_paws_grooming_logo.webp"
+           alt="Snazzy Paws Grooming Logo"
+           class="logo w3-circle" />
+    </div>
+    <h1 class="w3-xxlarge" style="color: #2c3e50; margin-left:15px;">
+      Snazzy Paws Grooming
+    </h1>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul class="w3-bar w3-center w3-light-grey w3-border-bottom" style="list-style: none; margin: 0; padding: 0;">
+      <li class="w3-bar-item"><a href="index.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Home</a></li>
+      <li class="w3-bar-item"><a href="services.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Services</a></li>
+      <li class="w3-bar-item"><a href="gallery.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Gallery</a></li>
+      <li class="w3-bar-item"><a href="booking.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Booking</a></li>
+      <li class="w3-bar-item"><a href="contact.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Contact</a></li>
+      <li class="w3-bar-item"><a href="privacy-policy.html" class="w3-button w3-round-large" style="color: var(--secondary-color);">Privacy Policy</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="w3-container w3-padding-32">
+    <!-- Page Heading -->
+    <div class="heading w3-center"
+         style="background-color:#dff9fb; padding:20px;">
+      <h2 style="color: var(--secondary-color);">Gallery</h2>
+    </div>
+
+    <!-- Filter & Sort Controls -->
+    <div class="controls w3-container w3-margin-bottom">
+      <label for="filter">Filter by title:</label>
+      <input
+        type="text"
+        id="filter"
+        placeholder="Type to filter..."
+        class="w3-input w3-border"
+        style="max-width: 300px; display:inline-block; margin-left: 10px;"
+      />
+      <label for="sort" style="margin-left: 20px;">Sort by:</label>
+      <select id="sort"
+              class="w3-select w3-border"
+              style="max-width: 200px; display:inline-block; margin-left: 10px;">
+        <option value="title">Title</option>
+        <option value="date">Date</option>
+      </select>
+    </div>
+
+    <!-- Gallery Grid (Using Your Custom CSS Grid) -->
+    <div class="gallery-grid">
+      <!-- Each gallery-item is styled with .gallery-item from your CSS -->
+      <div class="gallery-item" data-title="Dog Bathing" data-date="2023-01-10">
+        <img src="images/dog-bathing.webp" alt="Dog Bathing" />
+      </div>
+      <div class="gallery-item" data-title="Dog Grooming" data-date="2023-02-20">
+        <img src="images/Service-3.webp" alt="Dog Grooming" />
+      </div>
+      <div class="gallery-item" data-title="Puppy Training" data-date="2023-03-15">
+        <img src="images/puppies.webp" alt="Puppy Training" />
+      </div>
+      <div class="gallery-item" data-title="Nail Clipping" data-date="2023-04-05">
+        <img src="images/Service-4.webp" alt="Nail Clipping" />
+      </div>
+      <div class="gallery-item" data-title="Hair Styling" data-date="2023-05-12">
+        <img src="images/Service-5.webp" alt="Hair Styling" />
+      </div>
+      <div class="gallery-item" data-title="Teeth Cleaning" data-date="2023-06-08">
+        <img src="images/teeth-cleaning.webp" alt="Teeth Cleaning" />
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w3-container w3-center"
+          style="background-color: #34495e; color: #ecf0f1; padding:20px;">
+    <div class="social-icons w3-xlarge w3-section">
+      <img src="images/facebook-icon.webp" alt="Facebook"
+           style="width:30px; height:30px; margin:10px;" />
+      <img src="images/twitter-icon.webp" alt="Twitter"
+           style="width:30px; height:30px; margin:10px;" />
+      <img src="images/instagram-icon.webp" alt="Instagram"
+           style="width:30px; height:30px; margin:10px;" />
+      <img src="images/whatsapp-icon.webp" alt="WhatsApp"
+           style="width:30px; height:30px; margin:10px;" />
+      <img src="images/youtube-icon.webp" alt="YouTube"
+           style="width:30px; height:30px; margin:10px;" />
+    </div>
+    <p>Opening Hours: Mon-Sat 9:00 AM - 5:00 PM</p>
+  </footer>
+
 </body>
 </html>

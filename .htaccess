@@ -1,0 +1,4 @@
+AuthName "Restricted Content"
+AuthUserFile F:\Study\Done\Open Polytechnic\BIT 607\Assessment 2\.htpasswd
+AuthType Basic
+Require valid-user
